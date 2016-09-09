@@ -10,5 +10,6 @@
 
 # Ignores .scss files
 /scss/design.scss
+/scss/.sass-cache
 /scss/design.css.map
 /scss/.DS_Store
