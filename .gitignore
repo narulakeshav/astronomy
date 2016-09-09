@@ -1,0 +1,14 @@
+# Ignoring the Jade Files
+/index.jade
+
+# Ignore DS_Store
+/.DS_Store
+
+#Ignores the Node Modules and server.js file
+/node_modules/
+/server.js
+
+# Ignores .scss files
+/scss/design.scss
+/scss/design.css.map
+/scss/.DS_Store
