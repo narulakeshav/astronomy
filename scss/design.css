@@ -1,0 +1,116 @@
+/* Importing Google Font */
+@import url(https://fonts.googleapis.com/css?family=Lato:100);
+/* Color Declarations */
+/* Declaring Variables */
+/* Font Properties */
+/* Mixins*/
+/* General CSS */
+body {
+  -webkit-transition: all 0.75s;
+  -moz-transition: all 0.75s;
+  -ms-transition: all 0.75s;
+  transition: all 0.75s;
+  background: linear-gradient(90deg, #ED6372, #F69449);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: Lato;
+  font-weight: 100;
+  height: 100vh;
+  padding-top: 10%; }
+
+a:focus,
+a:hover {
+  text-decoration: none; }
+
+/* Div Tags CSS */
+.card {
+  background-color: #FFF;
+  border-radius: 0px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  padding: 0; }
+  .card h2 {
+    color: #ED6372;
+    text-transform: uppercase;
+    font: 700 18px Lato;
+    padding: 0px 25px;
+    padding-top: 18px; }
+  .card p {
+    color: #888;
+    padding: 0px 25px;
+    font: 300 16px Lato; }
+  .card .form-group {
+    padding: 5px 25px;
+    padding-top: 10px; }
+    .card .form-group label {
+      color: #666;
+      font: 700 12px Lato;
+      padding-bottom: 5px;
+      text-transform: uppercase; }
+    .card .form-group input,
+    .card .form-group input:focus {
+      background: #EEE;
+      padding: 10px 14px;
+      width: 70%;
+      color: #777;
+      border: none;
+      font: 300 16px Lato;
+      outline: 0; }
+    .card .form-group ::-webkit-input-placeholder {
+      color: #AAA; }
+    .card .form-group .btn-search,
+    .card .form-group .btn-search:focus {
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      transition: all 0.3s;
+      background: #ED6372;
+      border-radius: 2px;
+      font: 700 12px Lato;
+      text-transform: uppercase;
+      color: #FFF;
+      margin-top: 15px;
+      padding: 10px 10px;
+      position: relative;
+      top: -11px;
+      left: 6px;
+      outline: 0; }
+    .card .form-group .btn-search:hover {
+      background: #DB5C6A;
+      color: #FFF; }
+  .card .result {
+    background: #EEE; }
+    .card .result .table {
+      margin-top: 25px;
+      background: transparent; }
+      .card .result .table tbody tr td {
+        border: none;
+        font: bolder 14px Lato;
+        color: #888; }
+      .card .result .table tbody tr .bold {
+        text-align: right; }
+        .card .result .table tbody tr .bold span {
+          background: #FFF;
+          font: bolder 18px Lato;
+          color: #ED6372;
+          padding: 6px 10px;
+          position: relative;
+          top: -3px; }
+
+/* Image CSS */
+.logo {
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  transition: all 0.1s;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  margin: 10px;
+  width: 40px;
+  height: 40px; }
+
+/* Media Queries */
+
+/*# sourceMappingURL=design.css.map */
