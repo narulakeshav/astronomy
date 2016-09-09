@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- Favicon and Title-->
+    <title id="page-title">Astronomy Calculator</title>
+    <link rel="shortcut icon" href="logo.png">
+    <!-- META TAGS-->
+    <meta property="og:title" content="Blossom">
+    <meta property="og:description" content="Blossom is a pomodoro clock application that helps you manage time, by allowing you to work for 25 minutes, followed by a 5 minutes of break time. You can also set work and break time accordingly and alarm will ring when time is over.">
+    <meta property="og:site_name" content="NarulaKeshav">
+    <meta property="og:url" content="http://narulakeshav.com/app/blossom">
+    <meta property="og:image" content="http://i.imgur.com/bEPZ8MB.jpg">
+    <!-- TWITTER CARD META TAGS-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@NarulaKeshav">
+    <meta name="twitter:creator" content="@NarulaKeshav">
+    <meta name="twitter:title" content="Blossom">
+    <meta name="twitter:description" content="Blossom is a pomodoro clock application that helps you manage time, by allowing you to work for 25 minutes, followed by a 5 minutes of break time. You can also set work and break time accordingly and alarm will ring when time is over.">
+    <meta name="twitter:image" content="http://i.imgur.com/bEPZ8MB.jpg">
+    <!-- CSS CDNs-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- MY CSS FILE-->
+    <link rel="stylesheet" href="scss/design.css" media="all">
+  </head>
+  <body><img src="pic.png" class="logo img-responsive">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-10 col-md-offset-1 card">
+        <h2>Astronomy Calculator</h2>
+        <p>Find out how many days you've lived and how much you've traveled!</p>
+        <form>
+          <div class="form-group">
+            <label>Birthday</label><br>
+            <input type="text" placeholder="04/13/1997" id="birthday">
+            <button id="search" type="button" class="btn btn-search">Calculate</button>
+          </div>
+        </form>
+        <div class="col-md-12 result">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td class="bold"> <span id="timeInYears">0</span></td>
+                <td>Years Old</td>
+              </tr>
+              <tr>
+                <td class="bold"> <span id="timeInHours">0</span></td>
+                <td>Hours Lived</td>
+              </tr>
+              <tr>
+                <td class="bold"> <span id="distanceInMiles">0</span></td>
+                <td>Miles Traveled</td>
+              </tr>
+              <tr>
+                <td class="bold"> <span id="distanceInAU">0</span></td>
+                <td>AU Traveled</td>
+              </tr>
+              <tr>
+                <td class="bold"> <span id="distanceInLightYears">0</span></td>
+                <td>Light Years Traveled</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- JAVASCRIPT CDNs-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <!-- MY JAVSCRIPT FILE-->
+  <script src="js/calculate.js"></script>
+</html>
