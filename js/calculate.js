@@ -1,11 +1,14 @@
 $(document).ready(function() {
     new WOW().init();
 
+    $('[data-toggle="tooltip"]').tooltip();
+
     console.log("Loaded");
 
     // Getting HTML Elements by ID
     var d = document;
     var search = d.getElementById("search");
+    var reset = d.getElementById("reset");
     var getAgeInYr = d.getElementById("timeInYears");
     var getTimeInHr = d.getElementById("timeInHours");
     var getDistanceInMiles = d.getElementById("distanceInMiles");
@@ -32,6 +35,11 @@ $(document).ready(function() {
             var lightYearsDistance = distanceInLightYears(milesDistance);
             showAsHTML(timeInYears, timeInHours, milesDistance, AUDistance, lightYearsDistance);
         }
+    };
+
+    reset.onclick = function() {
+        birthday.value = "";
+        showAsHTML(0,0,0,0,0);
     };
 
     function yearsLived() {
