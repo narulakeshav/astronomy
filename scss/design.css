@@ -52,7 +52,7 @@ a:hover {
     .card .form-group input:focus {
       background: #EEE;
       padding: 10px 14px;
-      width: 70%;
+      width: 65%;
       color: #777;
       border: none;
       font: 300 16px Lato;
@@ -78,6 +78,12 @@ a:hover {
       outline: 0; }
     .card .form-group .btn-search:hover {
       background: #DB5C6A;
+      color: #FFF; }
+    .card .form-group #reset,
+    .card .form-group #reset:focus {
+      background: #DB5C6A; }
+    .card .form-group #reset:hover {
+      background: #CC5663;
       color: #FFF; }
   .card .result {
     background: #EEE; }
@@ -106,11 +112,30 @@ a:hover {
   transition: all 0.1s;
   position: fixed;
   top: 20px;
-  left: 20px;
+  left: 47%;
   margin: 10px;
-  width: 40px;
-  height: 40px; }
+  width: 60px; }
 
 /* Media Queries */
+@media (max-width: 768px) {
+  body {
+    padding-top: 10%; }
+
+  .logo {
+    margin: 0 auto;
+    width: 40px;
+    position: static;
+    margin-bottom: 4%; }
+
+  .card .form-group {
+    padding-bottom: 14%; }
+    .card .form-group input {
+      width: 100%; }
+    .card .form-group .btn-search {
+      position: static;
+      float: right;
+      margin-left: 5px; }
+  .card .result {
+    padding: 2% 10px; } }
 
 /*# sourceMappingURL=design.css.map */
