@@ -26,7 +26,7 @@
     <!-- MY CSS FILE-->
     <link rel="stylesheet" href="scss/design.css" media="all">
   </head>
-  <body><img src="pic.png" class="logo img-responsive">
+  <body><img class="logo img-responsive" src="pic.png">
     <div class="col-md-6 col-md-offset-3">
       <div class="col-md-10 col-md-offset-1 card">
         <h2>Astronomy Calculator</h2>
@@ -35,7 +35,8 @@
           <div class="form-group">
             <label>Birthday</label><br>
             <input type="text" placeholder="04/13/1997" id="birthday">
-            <button id="search" type="button" class="btn btn-search">Calculate</button>
+            <button class="btn btn-search" id="search" type="button">Calculate</button>
+            <button class="btn btn-search" id="reset" type="button">Reset</button>
           </div>
         </form>
         <div class="col-md-12 result">
@@ -55,11 +56,11 @@
               </tr>
               <tr>
                 <td class="bold"> <span id="distanceInAU">0</span></td>
-                <td>AU Traveled</td>
+                <td>AU Traveled &nbsp;<span class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="1 AU ≈ 93 Million Miles"></span></td>
               </tr>
               <tr>
                 <td class="bold"> <span id="distanceInLightYears">0</span></td>
-                <td>Light Years Traveled</td>
+                <td>Light Years Traveled &nbsp;<span class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="1 LY ≈ 5.9 Trillion Miles"></span></td>
               </tr>
             </tbody>
           </table>
